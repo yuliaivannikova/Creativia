@@ -1,0 +1,121 @@
+// .is-hidden {
+//     display: none;
+// }
+
+.tab {
+    color: #505050;
+    font-size: 14px;
+    padding: 14px 40px;
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    font-weight: 400;
+    margin-right: 40px;
+    background-color: #f7f7f7;
+
+    @media screen and (max-width: 540px) {
+        margin-right: 0;
+    }
+}
+
+.tab:before {
+    /*-webkit-transform: translate(-50%,-50%) rotate(0);*/
+    transform: translate(-50%, -50%) rotate(-90deg);
+    will-change: translate, rotate;
+}
+
+.tab:after {
+    transform: translate(-50%, -50%);
+    will-change: translate, opacity;
+
+}
+
+.tab.open:before {
+    /* добавочный класс */
+    transform: translate(-50%, -50%) rotate(-0deg);
+    width: 0;
+}
+
+.tab:after,
+.tab:before {
+    content: "";
+    width: 14px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #37454d;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transition: all .2s ease-in-out;
+    opacity: 1;
+    left: 21px;
+    contain: strict;
+}
+
+#accordeon {
+    width: 100%;
+    // border: 10px solid #fff;
+    // box-shadow: 0 0 10px grey;
+    // margin: 10px;
+}
+
+.acordion-head {
+    // padding: 15px 20px;
+    width: 100%;
+    cursor: pointer;
+    color: #262626;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    // margin-left: 50px;
+}
+
+.acordion-head-change {
+    color: #ff0036;
+}
+
+.acordion-body {
+    padding: 10px;
+    margin-bottom: 5px;
+    display: none;
+}
+
+
+
+
+.back::before {
+    content: " ";
+    display: block;
+    background: linear-gradient(to top, rgba(26, 26, 26, 0.36) 0%, transparent 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back:hover:before {
+    background-color: rgba(00, 00, 00, 0.6);
+    transition: all 0.3s ease-in-out;
+}
+
+.back:hover>.icon-back {
+    opacity: 1;
+    transition: all 0.8s ease-in-out
+}
+
+.icon-back {
+    position: absolute;
+    font-size: 100px;
+    color: rgb(223, 18, 86);
+    transition: 1s;
+    opacity: 0;
+    z-index: 5;
+}

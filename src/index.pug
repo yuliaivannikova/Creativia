@@ -1,5 +1,9 @@
-include ./blocks/header/_header.pug
-
+include ./blocks/about/_about.pug
+include ./blocks/acordion/_acordion.pug
+include ./blocks/progres-bar/_progres-bar.pug
+include ./blocks/team/_team.pug
+include ./blocks/btn/_btn.pug
+include ./blocks/follow/_follow.pug
 
 
 
@@ -11,12 +15,18 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Document
         link(rel="stylesheet", href="./css/normalize.css")
+        link(rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css")
+        link(rel="stylesheet" href="path/to/swiper.min.css")
         link(rel="stylesheet", href="./css/style.css")
     body
         +header
+        +about
+        +team
+        +follow
         
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+        script(src="https://unpkg.com/swiper/js/swiper.min.js")
+        script(src="path/to/swiper.min.js")
         script(src="./js/svgxuse.min.js")
-        script(src="./js/progressbar.js")
         script(src="https://kit.fontawesome.com/0b79355df0.js" crossorigin="anonymous")      
         script(src="./js/main.js")      
