@@ -1,0 +1,234 @@
+.nav {
+
+
+    &__link {
+        color: #a4a4a4;
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+        padding: 10px;
+        transition: ease 0.8s;
+
+        &:hover {
+            color: white;
+        }
+
+        &:visited {
+            color: #a4a4a4;
+        }
+
+    }
+
+    &__item {
+        padding: 25px 0;
+        position: relative;
+
+        &:before {
+            content: '';
+            width: 100%;
+            height: 3px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: transparent;
+            transition: ease 0.8s;
+        }
+
+        &:after {
+            content: '';
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: transparent;
+            transition: ease 0.8s;
+        }
+
+        &:hover:before {
+            background-color: #ff0036;
+        }
+
+        &:hover:after {
+            background-color: #ff0036;
+        }
+    }
+
+    &__list {
+        display: flex;
+        padding-left: 30px;
+        justify-content: space-around;
+
+    }
+
+    // navigation adaptive
+    &__burger-wrapper {
+        justify-content: flex-end;
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.199);
+    }
+
+    &__burger {
+        width: 59px;
+        height: 37px;
+        background-color: #ff0036;
+        position: relative;
+        justify-content: center;
+        transition: ease .8s;
+        cursor: pointer;
+        margin: 23px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &:hover {
+            background-color: #131313;
+
+            &:before {
+                border-bottom: 15px solid #131313;
+            }
+
+            &:after {
+                border-top: 15px solid #131313;
+            }
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: -15px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-bottom: 15px solid #ff0036;
+            transition: ease .8s;
+
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-top: 15px solid #ff0036;
+            transition: ease .8s;
+        }
+    }
+
+    &__burger span {
+        width: 28px;
+        height: 2px;
+        background-color: white;
+        display: block;
+    }
+
+    &__burger:hover span {
+        background-color: #ff0036;
+    }
+
+    &__burger span:nth-child(1) {
+        transform: translateY(-8px);
+        width: 20px;
+    }
+
+    &__burger:hover span:nth-child(1) {
+        width: 28px;
+    }
+
+    &__burger span:nth-child(3) {
+        transform: translateY(8px);
+        width: 20px;
+    }
+
+    &__burger:hover span:nth-child(3) {
+        width: 28px;
+    }
+
+
+    &__barlist {
+        transition: ease .8s;
+        background-image: linear-gradient(to bottom, hsla(0, 0%, 15%, 0.9), hsla(0, 0%, 21%, 0.9), hsla(0, 0%, 40%, 0.95)), url(../img/bg-nav.png);
+        background-size: contain;
+        width: 100%;
+        border: none;
+        position: absolute;
+        height: 667px;
+        left: 0;
+        top: 0;
+        z-index: 99;
+        transform: translateY(-100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 120px 0;
+        border-radius: 50%;
+
+        &--active {
+            transform: translateY(0%);
+            top: 0;
+            border-radius: 0;
+
+        }
+    }
+
+    &__baritem {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    &__barlink {
+        max-width: max-content;
+        color: white;
+        transition: ease .3s;
+        font-size: 25px;
+
+        &:visited {
+            color: white;
+        }
+
+        &:hover {
+            color: #ff0036
+        }
+    }
+
+    &__close {
+        position: fixed;
+        top: 21px;
+        right: 27px;
+        font-size: 3rem;
+        transition: all 0.2s;
+        transform-origin: 50% 53%;
+        display: block;
+        text-align: center;
+        width: 3rem;
+        height: 3rem;
+        color: #ff0036;
+        transition: all 0.8s;
+
+        &:visited {
+            color: #ff0036
+        }
+
+        &:hover {
+            transform: rotate(180deg);
+            color: #ffffff;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+
+        & {
+            padding: 70px 0;
+        }
+    }
+
+}

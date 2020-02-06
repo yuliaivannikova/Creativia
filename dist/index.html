@@ -4,21 +4,316 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Document</title>
+    <title>Creativia</title>
     <link rel="stylesheet" href="./css/normalize.css"/>
+    <link rel="stylesheet" href="./css/slick.css"/>
+    <link rel="stylesheet" href="./css/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="./css/style.css"/>
   </head>
   <body>
-    <h2>icon</h2>
-    <svg class="header__icon">
-      <use xlink:href="./img/icon/icons.svg#icon1"></use>
-    </svg>
-    <div class="header__progressbar" id="container"></div>
-    <div class="material-icons-access_alarm header__icons"></div>
+    <header>
+      <div class="header container-fluid" id="video">
+        <div class="header__wrapper" id="home">
+          <div class="container">
+            <div class="row">
+              <div class="col-3">
+                <div class="header__logo">
+                  <svg class="header__icon">
+                    <use xlink:href="./img/icon/icons.svg#logo"></use>
+                  </svg>
+                  <p class="header__logo-text">Creativia</p>
+                </div>
+              </div>
+              <div class="col-9">
+                <nav class="d-none d-lg-block">
+                  <div class="nav">  
+                    <ul class="nav__list">
+                      <li class="nav__item"><a class="nav__link link" href="#about us">about us</a></li>
+                      <li class="nav__item"><a class="nav__link link" href="#portfolio">portfolio</a></li>
+                      <li class="nav__item"><a class="nav__link link" href="#team">team    </a></li>
+                      <li class="nav__item"><a class="nav__link link" href="#blog">blog </a></li>
+                      <li class="nav__item"><a class="nav__link link" href="#contact">contact     </a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav__bar d-lg-none">
+          <div class="nav__burger-wrapper">
+            <div class="nav__burger"><span></span><span></span><span> </span></div>
+          </div>
+          <ul class="nav__barlist"><a class="nav__close" href="#close">&times;</a>
+            <li class="nav__baritem"><a class="nav__barlink" href="#about us">about us</a></li>
+            <li class="nav__baritem"><a class="nav__barlink" href="#portfolio">portfolio</a></li>
+            <li class="nav__baritem"><a class="nav__barlink" href="#team">team</a></li>
+            <li class="nav__baritem"><a class="nav__barlink" href="#blog">blog</a></li>
+            <li class="nav__baritem"><a class="nav__barlink" href="#contact">contact</a></li>
+          </ul>
+        </div>
+        <div class="container header__container">
+          <h1 class="header__title">why <span>creativia?</span></h1>
+          <div class="row">
+            <div class="col-sm-6 offset-md-3 col-md-2 header__button-col">
+              <div class="header__button"><a class="header__link">features</a></div>
+            </div>
+            <div class="col-sm-6 offset-md-2 col-md-2 header__button-col">
+              <div class="header__button"><a class="header__link">free psd</a></div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center"><a class="nav__link link" href="#portfolio"> 
+              <div class="header__scroll"><i class="fas fa-chevron-down header__icon-scroll"></i></div></a></div>
+        </div>
+      </div>
+    </header>
+    <section class="portfolio" id="portfolio">
+      <h2 class="portfolio__title">portfolio</h2>
+      <div class="container-fluid">
+        <div class="tabs">
+          <p class="tabs__title active" data-index="0">ILLUSTRATION</p>
+          <p class="tabs__title" data-index="1">WEB DESIGN</p>
+        </div>
+        <div class="tabs__link show" data-index="0">               
+          <div class="row">
+            <div class="col-6 order-2 col-md order-md-1 tabs__col">                   <a href="./img/tabs/tab1.1.png" data-fancybox="gallery"> <img class="lazy" data-src="./img/tabs/tab1.png" alt="img"/>
+                <div class="tabs__hover"> </div>
+                <div class="tabs__plus"> 
+                  <div class="material-icons-add tabs__icon"></div>
+                </div></a></div>
+            <div class="col-12 order-1 col-md-6 order-md-2 tabs__col"> <a href="./img/tabs/tab2.1.png" data-fancybox="gallery"> <img class="lazy" data-src="./img/tabs/tab2.png" alt="img"/>
+                <div class="tabs__hover"></div>
+                <div class="tabs__plus"> 
+                  <div class="material-icons-add tabs__icon"></div>
+                </div></a></div>
+            <div class="col-6 order-3 col-md tabs__col"> <a href="./img/tabs/tab3.1.png" data-fancybox="gallery"> <img class="lazy" data-src="./img/tabs/tab3.png" alt="img"/>
+                <div class="tabs__hover"></div>
+                <div class="tabs__plus"> 
+                  <div class="material-icons-add tabs__icon"></div>
+                </div></a></div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-md-3 tabs__col"><a href="./img/tabs/tab4.1.png" data-fancybox="gallery"> <img class="lazy" data-src="./img/tabs/tab4.png" alt="img"/>
+                <div class="tabs__hover"></div>
+                <div class="tabs__plus"> 
+                  <div class="material-icons-add tabs__icon"></div>
+                </div></a></div>
+            <div class="col-6 col-md-3 tabs__col"><a href="./img/tabs/tab5.1.png" data-fancybox="gallery"> <img class="lazy" data-src="./img/tabs/tab5.png" alt="img"/>
+                <div class="tabs__hover"></div>
+                <div class="tabs__plus"> 
+                  <div class="material-icons-add tabs__icon"></div>
+                </div></a></div>
+            <div class="col-6 col-md-3 tabs__col"><a href="./img/tabs/tab6.1.png" data-fancybox="gallery"> <img class="lazy" data-src="./img/tabs/tab6.png" alt="img"/>
+                <div class="tabs__hover"></div>
+                <div class="tabs__plus"> 
+                  <div class="material-icons-add tabs__icon"></div>
+                </div></a></div>
+            <div class="col-6 col-md-3 tabs__col"><a href="./img/tabs/tab7.1.png" data-fancybox="gallery"> <img class="lazy" data-src="./img/tabs/tab7.png" alt="img"/>
+                <div class="tabs__hover"></div>
+                <div class="tabs__plus"> 
+                  <div class="material-icons-add tabs__icon"></div>
+                </div></a></div>
+          </div>
+        </div>
+        <div class="tabs__link" data-index="1">
+          <div class="row">
+            <div class="col-6 col-md-3 tabs__col"><a href="./img/tabs/tab8.1.png" data-fancybox="gallery1"> <img class="lazy" data-src="./img/tabs/tab8.png" alt="img"/>
+                <div class="tabs__hover"></div>
+                <div class="tabs__plus"> 
+                  <div class="material-icons-add tabs__icon"></div>
+                </div></a></div>
+            <div class="col-6 col-md-3 tabs__col"><a href="./img/tabs/tab9.1.png" data-fancybox="gallery1"> <img class="lazy" data-src="./img/tabs/tab9.png" alt="img"/>
+                <div class="tabs__hover"></div>
+                <div class="tabs__plus"> 
+                  <div class="material-icons-add tabs__icon"></div>
+                </div></a></div>
+            <div class="col-6 col-md-3 tabs__col"><a href="./img/tabs/tab10.1.png" data-fancybox="gallery1"> <img class="lazy" data-src="./img/tabs/tab10.png" alt="img"/>
+                <div class="tabs__hover"></div>
+                <div class="tabs__plus"> 
+                  <div class="material-icons-add tabs__icon"></div>
+                </div></a></div>
+            <div class="col-6 col-md-3 tabs__col"><a href="./img/tabs/tab11.1.png" data-fancybox="gallery1"> <img class="lazy" data-src="./img/tabs/tab11.png" alt="img"/>
+                <div class="tabs__hover"></div>
+                <div class="tabs__plus"> 
+                  <div class="material-icons-add tabs__icon"></div>
+                </div></a></div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-md-3 tabs__col"> <a href="./img/tabs/tab12.1.png" data-fancybox="gallery1"> <img class="lazy" data-src="./img/tabs/tab12.png" alt="img"/>
+                <div class="tabs__hover"></div>
+                <div class="tabs__plus"> 
+                  <div class="material-icons-add tabs__icon"></div>
+                </div></a></div>
+            <div class="col-6 col-md-3 tabs__col"> <a href="./img/tabs/tab13.1.png" data-fancybox="gallery1"> <img class="lazy" data-src="./img/tabs/tab13.png" alt="img"/>
+                <div class="tabs__hover"></div>
+                <div class="tabs__plus"> 
+                  <div class="material-icons-add tabs__icon"></div>
+                </div></a></div>
+            <div class="col-6 col-md-3 tabs__col"> <a href="./img/tabs/tab14.1.png" data-fancybox="gallery1"> <img class="lazy" data-src="./img/tabs/tab14.png" alt="img"/>
+                <div class="tabs__hover"></div>
+                <div class="tabs__plus"> 
+                  <div class="material-icons-add tabs__icon"></div>
+                </div></a></div>
+            <div class="col-6 col-md-3 tabs__col"> <a href="./img/tabs/tab15.1.png" data-fancybox="gallery1"> <img class="lazy" data-src="./img/tabs/tab15.png" alt="img"/>
+                <div class="tabs__hover"></div>
+                <div class="tabs__plus"> 
+                  <div class="material-icons-add tabs__icon"></div>
+                </div></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="clients">
+      <div class="container">
+        <h2 class="clients__title">our <span>clients</span></h2>
+        <p class="clients__subtitle">Lorem ipsum dolor sit amet, consectetur <span> adipiscing elit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. </p>
+        <div class="row">
+          <div class="col-md-6">
+            <p class="clients__say">happy clients say</p>
+            <div class="clients__slider">
+              <div class="clients__slide">
+                <div class="clients__info">
+                  <p class="clients__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. </p><img class="lazy clients__img" data-src="./img/clients5.png"/>
+                  <p class="clients__name">amr srour </p>
+                </div>
+              </div>
+              <div class="clients__slide">
+                <div class="clients__info">
+                  <p class="clients__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. </p><img class="lazy clients__img" data-src="./img/clients6.png"/>
+                  <p class="clients__name"> srour amr</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <div class="clients__our"><img class="lazy" data-src="./img/clients.png" alt="" srcset=""/></div>
+              </div>
+              <div class="col-6">
+                <div class="clients__our"><img class="lazy" data-src="./img/clients2.png" alt="" srcset=""/></div>
+              </div>
+              <div class="col-6">
+                <div class="clients__our"><img class="lazy" data-src="./img/clients3.png" alt="" srcset=""/></div>
+              </div>
+              <div class="col-6">
+                <div class="clients__our"><img class="lazy" data-src="./img/clients4.png" alt="" srcset=""/></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="container">
+        <h2 class="services__title">our <span>services</span></h2>
+        <p class="services__subtitle">Lorem ipsum dolor sit amet, consectetur <span> adipiscing elit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. </p>
+        <div class="row">
+          <div class="col-sm-6 services__col">
+            <div class="services__wrapper">
+              <div class="services__hexagon">
+                <div class="services__icon fas fa-code"></div>
+              </div>
+              <h3>development</h3>
+            </div>
+            <div class="services__plate">
+              <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 services__col">
+            <div class="services__wrapper">
+              <div class="services__hexagon">
+                <div class="services__icon fab fa-html5"></div>
+              </div>
+              <h3>html/css</h3>
+            </div>
+            <div class="services__plate">
+              <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 services__col">
+            <div class="services__wrapper">
+              <div class="services__hexagon">
+                <div class="services__icon fab fa-wordpress-simple"></div>
+              </div>
+              <h3>wordpress</h3>
+            </div>
+            <div class="services__plate">
+              <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 services__col">
+            <div class="services__wrapper">
+              <div class="services__hexagon">
+                <div class="services__icon fas fa-mobile-alt"></div>
+              </div>
+              <h3>applications</h3>
+            </div>
+            <div class="services__plate">
+              <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 services__col">
+            <div class="services__wrapper">
+              <div class="services__hexagon">
+                <div class="services__icon fas fa-pencil-alt"></div>
+              </div>
+              <h3>ui/ux design</h3>
+            </div>
+            <div class="services__plate">
+              <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 services__col">
+            <div class="services__wrapper">
+              <div class="services__hexagon">
+                <div class="services__icon fas fa-laptop"></div>
+              </div>
+              <h3>responsive layout</h3>
+            </div>
+            <div class="services__plate">
+              <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="container">
+        <h2 class="news__title">our <span>news</span></h2>
+        <p class="news__subtitle">Lorem ipsum dolor sit amet, consectetur <span> adipiscing elit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. </p>
+      </div>
+      <div class="container" id="news"></div>
+      <div class="container">
+        <div class="news__nav" id="nav"> </div>
+      </div>
+    </section>
+    <section class="map__container lazy">
+      <div class="map" id="map"></div>
+      <div class="map__overlay">
+        <div class="map__name">
+          <h2 class="map__title">find <span>us on </span> the map</h2>
+        </div>
+        <div class="map__icon"><i class="fas fa-chevron-down map__icon-scroll"></i></div>
+      </div>
+    </section>
+    <footer class="footer container-fluid">
+      <div class="footer__author"></div>
+      <div class="footer__logo"><a class="footer__link link" href="#home">Creativia</a></div>
+      <div class="footer__scroll"><i class="fas fa-chevron-up footer__icon-scroll"></i></div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/jquery.lazy.min.js"></script>
+    <script src="./js/jquery.lazy.picture.min.js"></script>
     <script src="./js/svgxuse.min.js"></script>
-    <script src="./js/progressbar.js"></script>
+    <script src="./js/jquery.vide.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/ajax.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="https://kit.fontawesome.com/0b79355df0.js" crossorigin="anonymous">     </script>
-    <script src="./js/main.js">     </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQDEK_bp8E3TJz1Sg1VMqF7jn8J3Z7Haw"></script>
+    <script src="./js/map.js"></script>
+    <script src="./js/script.js">     </script>
   </body>
 </html>

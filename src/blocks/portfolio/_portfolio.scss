@@ -1,0 +1,17 @@
+.portfolio {
+    padding: 100px 0;
+    background-color: #262626;
+
+    &__title {
+        padding-bottom: 30px;
+        text-align: center;
+        color: white;
+    }
+
+    @media screen and (max-width: 767px) {
+
+        & {
+            padding: 70px 0;
+        }
+    }
+}

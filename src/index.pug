@@ -1,4 +1,12 @@
 include ./blocks/header/_header.pug
+include ./blocks/nav/_nav.pug
+include ./blocks/portfolio/_portfolio.pug
+include ./blocks/tabs/_tabs.pug
+include ./blocks/clients/_clients.pug
+include ./blocks/services/_services.pug
+include ./blocks/news/_news.pug
+include ./blocks/map/_map.pug
+include ./blocks/footer/_footer.pug
 
 
 
@@ -9,14 +17,30 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Document
+        title Creativia
         link(rel="stylesheet", href="./css/normalize.css")
+        link(rel="stylesheet", href="./css/slick.css")
+        link(rel="stylesheet", href="./css/slick-theme.css")
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css")
         link(rel="stylesheet", href="./css/style.css")
     body
         +header
+        +portfolio
+        +clients
+        +services
+        +news
+        +map
+        +footer
         
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+        script(src="./js/jquery.lazy.min.js")
+        script(src="./js/jquery.lazy.picture.min.js")
         script(src="./js/svgxuse.min.js")
-        script(src="./js/progressbar.js")
+        script(src="./js/jquery.vide.js")
+        script(src="./js/slick.js")
+        script(src="./js/ajax.js")
+        script(src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js")
         script(src="https://kit.fontawesome.com/0b79355df0.js" crossorigin="anonymous")      
-        script(src="./js/main.js")      
+        script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQDEK_bp8E3TJz1Sg1VMqF7jn8J3Z7Haw")
+        script(src="./js/map.js")
+        script(src="./js/script.js")      

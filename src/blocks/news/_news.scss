@@ -1,0 +1,105 @@
+.news {
+    padding: 100px 0;
+
+    & span {
+        color: #ff0036;
+    }
+
+    &__title {
+        text-align: center;
+        padding-bottom: 50px;
+
+    }
+
+    &__subtitle {
+        text-align: center;
+        padding-bottom: 100px;
+    }
+
+    &__img {
+        margin-bottom: 50px;
+        max-width: 100%;
+    }
+
+    &__right {
+        padding-bottom: 55px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__text {
+        font-size: 28px;
+    }
+
+    &__date {
+        color: #ff0036;
+        padding-bottom: 25px;
+
+    }
+
+    &__description {
+        padding-bottom: 25px;
+
+    }
+
+    &__link {
+
+        cursor: pointer;
+        width: 140px;
+        height: 40px;
+        background-color: #ff0036;
+        transition: ease 0.8s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-size: 15px;
+        padding: 10px 20px;
+
+        &:hover {
+            background-color: #1313137a;
+        }
+
+        &:visited {
+            color: white;
+        }
+
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__btn {
+        cursor: pointer;
+        width: 180px;
+        height: 50px;
+        background-color: #1313137a;
+        transition: ease 0.8s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        padding: 14px 25px;
+
+        &:hover {
+            background-color: #ff0036;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        &__text {
+            font-size: 20px;
+        }
+
+        &__subtitle {
+            padding-bottom: 60px;
+        }
+    }
+
+}

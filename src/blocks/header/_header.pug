@@ -1,8 +1,44 @@
 mixin header
-    h2 icon
-    svg.header__icon
-        use(xlink:href="./img/icon/icons.svg#icon1")
-    .header__progressbar(id="container")
-    //- пример иконок material-icon
-    .material-icons-access_alarm.header__icons
-                            
+    header
+        .header.container-fluid(id="video")
+            .header__wrapper(id="home")
+                .container
+                    .row
+                        .col-3
+                            .header__logo
+                                svg.header__icon
+                                    use(xlink:href="./img/icon/icons.svg#logo")
+                                p.header__logo-text Creativia
+                        .col-9
+                            +nav
+            .nav__bar.d-lg-none
+                .nav__burger-wrapper
+                    .nav__burger
+                        span
+                        span
+                        span 
+                ul.nav__barlist
+                    a.nav__close(href="#close") &times;
+                    li.nav__baritem
+                        a.nav__barlink(href="#about us") about us
+                    li.nav__baritem
+                        a.nav__barlink(href="#portfolio") portfolio
+                    li.nav__baritem
+                        a.nav__barlink(href="#team") team
+                    li.nav__baritem
+                        a.nav__barlink(href="#blog") blog
+                    li.nav__baritem
+                        a.nav__barlink(href="#contact") contact
+            .container.header__container
+                h1.header__title why <span>creativia?</span>
+                .row
+                    .col-sm-6.offset-md-3.col-md-2.header__button-col
+                        .header__button
+                            a.header__link features
+                    .col-sm-6.offset-md-2.col-md-2.header__button-col
+                        .header__button
+                            a.header__link free psd
+                .d-flex.justify-content-center
+                    a.nav__link.link(href="#portfolio") 
+                        .header__scroll
+                            i.fas.fa-chevron-down.header__icon-scroll

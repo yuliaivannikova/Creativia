@@ -1,0 +1,51 @@
+.footer {
+    padding: 30px 15px;
+    background-color: #262626;
+    display: flex;
+    justify-content: space-between;
+
+
+    &__scroll {
+        cursor: pointer;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #ff0036;
+        border-radius: 50%;
+        background-color: transparent;
+
+        &:hover {
+            background-color: #1313133b;
+            border: 1px solid #ff0036;
+        }
+    }
+
+    &__icon-scroll {
+        color: #ff0036;
+    }
+
+    &__logo,
+    &__author {
+        display: flex;
+        align-items: center;
+
+        & a {
+            font-size: 26px;
+            padding: 7px;
+            letter-spacing: 0.9px;
+            transition: ease.8s;
+            color: #5e5e5e;
+            font-family: 'Lato', sans-serif;
+
+            &:hover {
+                color: white;
+            }
+
+            &:visited {
+                color: #a4a4a4;
+            }
+        }
+    }
+}
