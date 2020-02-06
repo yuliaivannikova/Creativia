@@ -51,9 +51,8 @@ function News(_page, _count) {
 
                 // create img (data-src for lazy load)
                 let img = document.createElement('img');
-                img.setAttribute("data-src", `${objSearch.urlToImage}`);
+                img.setAttribute("src", `${objSearch.urlToImage}`);
                 img.classList.add('news__img');
-                img.classList.add('lazy');
 
 
                 // create title
