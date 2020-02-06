@@ -1,7 +1,7 @@
 .follow {
     height: 380px;
     // padding: 100px 0;
-    background-image: url("../../../dist/img/img11.png");
+    background-image: url("../img/img11.png");
 
     @media screen and (max-width: 540px) {
         height: 680px;
@@ -30,7 +30,7 @@
         transform: translate(-50%, -50%);
     }
 
-    // background-image: url(../../../dist/img/img11.png);
+    // background-image: url(../img/img11.png);
     &__title {
         margin-top: 100px;
         margin-bottom: 50px;

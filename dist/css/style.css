@@ -4474,7 +4474,7 @@ input:focus::placeholder {
 
 .follow {
   height: 380px;
-  background-image: url("../../../dist/img/img11.png"); }
+  background-image: url("../img/img11.png"); }
   @media screen and (max-width: 540px) {
     .follow {
       height: 680px;
