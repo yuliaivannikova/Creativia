@@ -3173,30 +3173,6 @@ html {
     padding-bottom: 150px; }
     .header__title span {
       color: #ff0036; }
-  .header__button {
-    width: 170px;
-    height: 50px;
-    background-color: #1313137a;
-    -webkit-transition: ease 0.8s;
-    -o-transition: ease 0.8s;
-    transition: ease 0.8s;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-    .header__button:hover {
-      background-color: #ff0036; }
-  .header__link {
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    padding: 14px 25px; }
   .header__scroll {
     margin-top: 30px;
     cursor: pointer;
@@ -3247,9 +3223,7 @@ html {
       display: flex;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center; }
-    .header__button {
-      margin: 15px; } }
+      justify-content: center; } }
 
 .nav__link {
   color: #a4a4a4;
@@ -3792,7 +3766,7 @@ html {
   .tabs__title {
     padding: 15px;
     margin: 5px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     cursor: pointer; }
     .tabs__title.active {
       color: #ff0036; }
@@ -3813,7 +3787,7 @@ html {
       z-index: 1;
       top: 0;
       left: 0; }
-    .tabs__col:hover .tabs__plus .material-icons-add {
+    .tabs__col:hover .tabs__plus .tabs__icon:before {
       display: block; }
   .tabs__img {
     max-width: 100%; }
@@ -3850,14 +3824,15 @@ html {
   .tabs__icon {
     text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.1);
     color: white;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 400;
     line-height: 46px;
     display: none; }
   .tabs__icon:before {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    display: none; }
   @media screen and (max-width: 991px) {
     .tabs__col:hover .tabs__plus {
       width: 42px;
@@ -3865,7 +3840,7 @@ html {
       top: 39%;
       left: 46%; }
     .tabs__icon {
-      font-size: 39px;
+      font-size: 30px;
       font-weight: 400; } }
   @media screen and (max-width: 767px) {
     .tabs__title {
@@ -4656,7 +4631,7 @@ input:focus::placeholder {
       font-size: 32px; } }
 
 .footer {
-  padding: 30px 15px;
+  padding: 10px 15px;
   background-color: #262626;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4786,3 +4761,6 @@ a {
   cursor: pointer; }
   a:visited {
     color: #900060; }
+
+* {
+  outline: none; }

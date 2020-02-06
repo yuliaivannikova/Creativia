@@ -77,27 +77,6 @@
         }
     }
 
-    &__button {
-        width: 170px;
-        height: 50px;
-        background-color: #1313137a;
-        transition: ease 0.8s;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        &:hover {
-            background-color: #ff0036;
-        }
-    }
-
-    &__link {
-        color: white;
-        font-family: 'Raleway', sans-serif;
-        font-size: 20px;
-        text-transform: uppercase;
-        padding: 14px 25px;
-    }
 
     &__scroll {
         margin-top: 30px;
@@ -164,9 +143,6 @@
             justify-content: center;
         }
 
-        &__button {
-            margin: 15px;
-        }
     }
 
 
