@@ -18,7 +18,7 @@ function News(_page, _count) {
     _page = _page + _count;
     page = _page;
 
-    const url = `https://newsapi.org/v2/everything?page=${_page}&qInTitle=develop&apiKey=528aeceed07e4156a030d11e005954a3`;
+    const url = `https://newsapi.org/v2/everything?page=${_page}&qInTitle=design&apiKey=528aeceed07e4156a030d11e005954a3`;
     var req = new Request(url);
 
     fetch(req)
