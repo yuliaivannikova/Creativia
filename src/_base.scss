@@ -109,6 +109,7 @@ section {
 
 body {
     line-height: 1;
+    background-color: #fff;
 }
 
 ol,
@@ -165,7 +166,7 @@ h3 {
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
-    color: #a4a4a4;
+    color: #262626;
 }
 
 p {
@@ -174,6 +175,10 @@ p {
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
+}
+
+.primery-text-color {
+    color: #505050;
 }
 
 a {

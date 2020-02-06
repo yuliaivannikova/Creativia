@@ -1,0 +1,13 @@
+mixin progres
+    <ul>
+        <li class="List-item">
+            <div class="ProgressBar ProgressBar--animateAll" data-progress="90">
+            <svg class="ProgressBar-contentCircle">
+                    <!-- on défini le l'angle et le centre de rotation du cercle -->
+            <circle transform="rotate(-90, 100, 100)" class="ProgressBar-background" cx="100" cy="100" r="80" />
+            <circle transform="rotate(-90, 100, 100)" class="ProgressBar-circle" cx="100" cy="100" r="80" />
+            <span class="ProgressBar-percentage ProgressBar-percentage--count"></span>
+                </svg>
+            </div>
+        </li>
+

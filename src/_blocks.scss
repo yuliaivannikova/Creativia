@@ -1,9 +1,15 @@
 @import './blocks/header/header';
 @import './blocks/nav/nav';
+@import './blocks/about/_about.scss';
+@import './blocks/acordion/_acordion.scss';
 @import './blocks/portfolio/portfolio';
 @import './blocks/tabs/tabs';
 @import './blocks/clients/clients';
+@import './blocks/progres-bar/progres-bar';
+@import './blocks/team/team.scss';
 @import './blocks/services/services';
 @import './blocks/news/news';
+@import './blocks/btn/btn';
+@import './blocks/follow/follow';
 @import './blocks/map/map';
 @import './blocks/footer/footer';
