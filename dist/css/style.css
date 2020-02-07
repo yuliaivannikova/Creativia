@@ -3160,7 +3160,19 @@ html {
     stroke-width: 2px;
     fill-rule: evenodd; }
   .header__container {
-    padding-top: 135px; }
+    padding-top: 135px;
+    padding-bottom: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 75%; }
   .header__title {
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
@@ -3174,7 +3186,6 @@ html {
     .header__title span {
       color: #ff0036; }
   .header__scroll {
-    margin-top: 30px;
     cursor: pointer;
     width: 45px;
     height: 45px;

@@ -59,6 +59,11 @@
 
     &__container {
         padding-top: 135px;
+        padding-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 75%;
     }
 
     &__title {
@@ -79,7 +84,6 @@
 
 
     &__scroll {
-        margin-top: 30px;
         cursor: pointer;
         width: 45px;
         height: 45px;

@@ -12,6 +12,7 @@ $("#video").vide({
     loop: true,
     autoplay: true,
     posterType: 'webp',
+    posterType: 'jpg',
     resizing: true,
     bgColor: 'transparent',
 
