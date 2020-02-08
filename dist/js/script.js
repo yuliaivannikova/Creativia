@@ -114,3 +114,7 @@ $(function () {
 $(function () {
     $('.lazy').lazy();
 });
+
+// wow
+
+new WOW().init();

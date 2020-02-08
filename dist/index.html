@@ -7,7 +7,8 @@
     <title>Creativia</title>
     <link rel="stylesheet" href="./css/normalize.css"/>
     <link rel="stylesheet" href="./css/slick.css"/>
-    <link rel="stylesheet" href="./css/slick-theme.css"/>
+    <link rel="stylesheet" href="./css/slick.css"/>
+    <link rel="stylesheet" href="./css/animate.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"/>
     <link rel="stylesheet" href="path/to/swiper.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
@@ -248,7 +249,7 @@
         </div>
       </div>
     </section>
-    <section class="clients">
+    <section class="clients" data-parallax="scroll" data-image-src="./img/img4.png">
       <div class="container">
         <h2 class="clients__title">our <span>clients</span></h2>
         <p class="clients__subtitle">Lorem ipsum dolor sit amet, consectetur <span> adipiscing elit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. </p>
@@ -445,7 +446,7 @@
         <p class="services__subtitle">Lorem ipsum dolor sit amet, consectetur <span> adipiscing elit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. </p>
         <div class="row">
           <div class="col-sm-6 services__col">
-            <div class="services__wrapper">
+            <div class="services__wrapper wow bounceInUp">
               <div class="services__hexagon">
                 <div class="services__icon fas fa-code"></div>
               </div>
@@ -576,6 +577,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="path/to/swiper.min.js"></script>
+    <script src="./js/parallax.min.js"></script>
+    <script src="./js/wow.min.js"></script>
     <script src="./js/jquery.lazy.min.js"></script>
     <script src="./js/jquery.lazy.picture.min.js"></script>
     <script src="./js/svgxuse.min.js"></script>

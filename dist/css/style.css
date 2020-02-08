@@ -3858,10 +3858,7 @@ html {
       margin-bottom: 15px; } }
 
 .clients {
-  padding: 100px 0;
-  background-image: url(../img/img4.png);
-  background-size: cover;
-  background-position: top; }
+  padding: 100px 0; }
   .clients span {
     color: #ff0036; }
   .clients__title {
