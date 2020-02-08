@@ -38,68 +38,80 @@ let swiper = new Swiper('.swiper-container', {
 });
 
 // progres-bar
-let offset = 4500;
-$(window).scroll(function () {
-    let scrolltop = $(this).scrollTop();
+// let offset = 4500;
+// $(window).scroll(function () {
+// $(window).scroll(function () {
+//     show_graphics();
+// });
 
-    (function ($) {
+// $(window).bind('scroll.once', function () {
+//     (function ($)(jQuery))
+// });
 
-        $.fn.bekeyProgressbar = function (options) {
+// function show_graphics() {
+//     //run code
+//     $(window).unbind('scroll.once')
+// };
 
-            options = $.extend({
-                animate: true,
-                animateText: true
-            }, options);
 
-            let $this = $(this);
+(function ($) {
 
-            let $progressBar = $this;
-            let $progressCount = $progressBar.find('.ProgressBar-percentage--count');
-            let $circle = $progressBar.find('.ProgressBar-circle');
-            let percentageProgress = $progressBar.attr('data-progress');
-            let percentageRemaining = (100 - percentageProgress);
-            let percentageText = $progressCount.parent().attr('data-progress');
+    $.fn.bekeyProgressbar = function (options) {
 
-            let radius = $circle.attr('r');
-            let diameter = radius * 2;
-            let circumference = Math.round(Math.PI * diameter);
+        options = $.extend({
+            animate: true,
+            animateText: true
+        }, options);
 
-            let percentage = circumference * percentageRemaining / 100;
+        let $this = $(this);
 
+        let $progressBar = $this;
+        let $progressCount = $progressBar.find('.ProgressBar-percentage--count');
+        let $circle = $progressBar.find('.ProgressBar-circle');
+        let percentageProgress = $progressBar.attr('data-progress');
+        let percentageRemaining = (100 - percentageProgress);
+        let percentageText = $progressCount.parent().attr('data-progress');
+
+        let radius = $circle.attr('r');
+        let diameter = radius * 2;
+        let circumference = Math.round(Math.PI * diameter);
+
+        let percentage = circumference * percentageRemaining / 100;
+
+        $circle.css({
+            'stroke-dasharray': circumference,
+            'stroke-dashoffset': percentage
+        })
+
+        if (options.animate === true) {
             $circle.css({
-                'stroke-dasharray': circumference,
+                'stroke-dashoffset': circumference
+            }).animate({
                 'stroke-dashoffset': percentage
-            })
+            }, 4000)
+        }
 
-            if (options.animate === true) {
-                $circle.css({
-                    'stroke-dashoffset': circumference
-                }).animate({
-                    'stroke-dashoffset': percentage
-                }, 4000)
-            }
+        if (options.animateText == true) {
 
-            if (options.animateText == true) {
+            $({
+                Counter: 0
+            }).animate({
+                Counter: percentageText
+            }, {
+                duration: 2500,
+                step: function () {
+                    $progressCount.text(Math.ceil(this.Counter) + '%');
+                }
+            });
 
-                $({
-                    Counter: 0
-                }).animate({
-                    Counter: percentageText
-                }, {
-                    duration: 2500,
-                    step: function () {
-                        $progressCount.text(Math.ceil(this.Counter) + '%');
-                    }
-                });
+        } else {
+            $progressCount.text(percentageText + '%');
+        }
 
-            } else {
-                $progressCount.text(percentageText + '%');
-            }
+    };
+})(jQuery);
 
-        };
-
-    })(jQuery);
-
+$(window).scroll(function () {
     $(document).ready(function () {
 
         $('.ProgressBar--animateNone').bekeyProgressbar({
@@ -158,5 +170,3 @@ window.onclick = function (event) {
 //     });
 //     return false;
 // });
-
-// button
