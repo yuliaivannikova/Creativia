@@ -11,7 +11,7 @@
     &__title {
         padding: 15px;
         margin: 5px;
-        margin-bottom: 100px;
+        margin-bottom: 60px;
         cursor: pointer;
 
         &.active {
@@ -42,7 +42,7 @@
         }
 
 
-        &:hover .tabs__plus .material-icons-add {
+        &:hover .tabs__plus .tabs__icon:before {
             display: block;
 
         }
@@ -79,7 +79,7 @@
     &__icon {
         text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.1);
         color: white;
-        font-size: 70px;
+        font-size: 60px;
         font-weight: 400;
         line-height: 46px;
         display: none;
@@ -87,6 +87,7 @@
 
     &__icon:before {
         display: flex;
+        display: none;
     }
 
     @media screen and (max-width: 991px) {
@@ -99,7 +100,7 @@
         }
 
         &__icon {
-            font-size: 39px;
+            font-size: 30px;
             font-weight: 400;
         }
     }
