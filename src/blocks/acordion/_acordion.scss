@@ -1,77 +1,47 @@
-// .is-hidden {
-//     display: none;
-// }
+#accordeon {
+    width: 100%;
 
-.tab {
-    color: #505050;
-    font-size: 14px;
-    padding: 14px 40px;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 1139px) {
+        margin-bottom: 60px;
+    }
+}
+
+.acordion-head {
+    padding: 15px 20px;
+    width: 100%;
+    cursor: pointer;
     position: relative;
-    list-style-type: none;
     margin: 0;
-    font-weight: 400;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
     margin-right: 40px;
-    background-color: #f7f7f7;
+    background-color: #505050;
+    outline: none;
+    background-color: rgba(38, 38, 38, 1);
+    border: 1px solid rgba(255, 0, 54, 0.5);
+    // background: linear-gradient(to top, rgba(38, 38, 38, 1) 20%, transparent 100%);
+
+
+    &:hover,
+    &:active {
+        color: rgba(255, 0, 54, 1);
+        border: 1px solid rgba(255, 0, 54, 1);
+        transition: 1s;
+    }
 
     @media screen and (max-width: 540px) {
         margin-right: 0;
     }
 }
 
-.tab:before {
-    /*-webkit-transform: translate(-50%,-50%) rotate(0);*/
-    transform: translate(-50%, -50%) rotate(-90deg);
-    will-change: translate, rotate;
-}
-
-.tab:after {
-    transform: translate(-50%, -50%);
-    will-change: translate, opacity;
-
-}
-
-.tab.open:before {
-    /* добавочный класс */
-    transform: translate(-50%, -50%) rotate(-0deg);
-    width: 0;
-}
-
-.tab:after,
-.tab:before {
-    content: "";
-    width: 14px;
-    height: 2px;
-    border-radius: 2px;
-    background-color: #37454d;
-    display: block;
-    position: absolute;
-    top: 50%;
-    transition: all .2s ease-in-out;
-    opacity: 1;
-    left: 21px;
-    contain: strict;
-}
-
-#accordeon {
-    width: 100%;
-    // border: 10px solid #fff;
-    // box-shadow: 0 0 10px grey;
-    // margin: 10px;
-}
-
-.acordion-head {
-    // padding: 15px 20px;
-    width: 100%;
-    cursor: pointer;
-    color: #262626;
-    font-family: 'Raleway', sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    // margin-left: 50px;
-}
-
-.acordion-head-change {
-    color: #ff0036;
+.icon {
+    margin-right: 10px;
 }
 
 .acordion-body {
@@ -80,8 +50,9 @@
     display: none;
 }
 
-
-
+.active {
+    display: block;
+}
 
 .back::before {
     content: " ";

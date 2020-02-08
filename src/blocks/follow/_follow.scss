@@ -1,7 +1,8 @@
 .follow {
-    height: 380px;
+    height: 430px;
     // padding: 100px 0;
     background-image: url("../../../dist/img/img11.png");
+    background-size: cover;
 
     @media screen and (max-width: 540px) {
         height: 680px;
@@ -30,7 +31,6 @@
         transform: translate(-50%, -50%);
     }
 
-    // background-image: url(../../../dist/img/img11.png);
     &__title {
         margin-top: 100px;
         margin-bottom: 50px;
@@ -80,11 +80,6 @@
         background-color: rgba(0, 0, 0, 0.6);
         transition: 0.5s;
     }
-
-    // &__network:hover>&__wrap>&__network>&__icon {
-    //     color: #fff;
-
-    // }
 
     &__wrap {
         width: 80px;

@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./css/slick.css"/>
     <link rel="stylesheet" href="./css/slick-theme.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"/>
-    <link rel="stylesheet" href="path/to/swiper.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="./css/style.css"/>
   </head>
@@ -22,7 +21,7 @@
               <div class="col-3">
                 <div class="header__logo">
                   <svg class="header__icon">
-                    <use xlink:href="./icon/icons.svg#logo"></use>
+                    <use xlink:href="./img/icon/icons.svg#logo"></use>
                   </svg>
                   <p class="header__logo-text">Creativia</p>
                 </div>
@@ -77,29 +76,27 @@
           <h3>Lorem ipsum dolor sit amet, consectetur <span class="about__span-color"> adipiscingelit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. </h3>
         </div>
         <div class="row">
-          <div class="col-12 col-lg-6">
+          <div class="col-12 col-xl-6">
             <p class="primery-text-color about__txt-acc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae, </p>
             <div id="accordeon">
+              <div class="acordion-head"><i class="fas fa-chevron-down icon"></i><span>Hwo is creativia</span></div>
+              <p class="primery-text-color acordion-body active"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum saepe ex nesciunt, quidem quis illo cupiditate, quod maxime. Tenetur, ex quos. Magnam quasi iure facere minus velit voluptate accusamus hic!</p>
               <div class="acordion-head">
-                <div class="tab" role="tab" aria-expanded="false" aria-owns="open-tab" aria-controls="open-tab" tabindex="0">Hwo is creativia</div>
-              </div>
+                 <i class="fas fa-chevron-down icon"></i><span>Experiences</span></div>
               <p class="primery-text-color acordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum saepe ex nesciunt, quidem quis illo cupiditate, quod maxime. Tenetur, ex quos. Magnam quasi iure facere minus velit voluptate accusamus hic!</p>
-              <div class="acordion-head">
-                <div class="tab" role="tab" aria-expanded="false" aria-owns="open-tab" aria-controls="open-tab" tabindex="0">Experiences</div>
-              </div>
-              <p class="primery-text-color acordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum saepe ex nesciunt, quidem quis illo cupiditate, quod maxime. Tenetur, ex quos. Magnam quasi iure facere minus velit voluptate accusamus hic!</p>
-              <div class="acordion-head">
-                <div class="tab" role="tab" aria-expanded="false" aria-owns="open-tab" aria-controls="open-tab" tabindex="0">Learn more</div>
-              </div>
+              <div class="acordion-head d-flex">
+                 <i class="fas fa-chevron-down icon"></i><span>Learn more</span></div>
               <p class="primery-text-color acordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum saepe ex nesciunt, quidem quis illo cupiditate, quod maxime. Tenetur, ex quos. Magnam quasi iure facere minus velit voluptate accusamus hic!</p>
             </div>
           </div>
           <div class="col-12 col-lg-6">
             <div class="swiper-container">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"> <img class="about__slider-img" src="../../../dist/img/img2.png" alt="img"/></div>
-                <div class="swiper-slide"> <img class="about__slider-img" src="../../../dist/img/img1.png" alt="img"/></div>
-                <div class="swiper-slide"><img class="about__slider-img" src="../../../dist/img/img3.png" alt="img"/></div>
+                <div class="swiper-slide"> <img class="lazy about__slider-img" data-src="../../../dist/img/img2.png" alt="img"/></div>
+                <div class="swiper-slide"> <img class="lazy about__slider-img" data-src="../../../dist/img/img1.png" alt="img"/></div>
+                <div class="swiper-slide"><img class="lazy about__slider-img" data-src="../../../dist/img/img3.png" alt="img"/></div>
+                <div class="swiper-slide"> <img class="lazy about__slider-img" data-src="../../../dist/img/img2.png" alt="img"/></div>
+                <div class="swiper-slide"> <img class="lazy about__slider-img" data-src="../../../dist/img/img1.png" alt="img"/></div>
               </div>
             </div>
           </div>
@@ -114,30 +111,30 @@
           </div>
         </div>
         <div class="row">           
-          <div class="col-12 col-md-6 col-xl-3">
+          <div class="col-12 col-sm-6 col-lg-3">
             <div class="about__-wrapper d-flex justify-content-center">
-              <div class="about__icon-wrapper"><i class="fas fa-heart about__icon"></i></div>
+              <div class="about__icon-wrapper"><i class="fas fa-book-reader about__icon"></i></div>
             </div>
             <h3 class="about__txt">FLAT DESIGN</h3>
             <p class="primery-text-color about__txt" src="../../../dist/img/icon/icon2.svg" alt="icon">Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet  </p>
           </div>
-          <div class="col-12 col-md-6 col-xl-3">
+          <div class="col-12 col-sm-6 col-lg-3">
             <div class="about__-wrapper d-flex justify-content-center">
-              <div class="about__icon-wrapper"><i class="fas fa-heart about__icon"></i></div>
+              <div class="about__icon-wrapper"><i class="fas fa-book-reader about__icon"></i></div>
             </div>
             <h3 class="about__txt">RETINA READY</h3>
             <p class="primery-text-color about__txt" src="../../../dist/img/icon/icon2.svg" alt="icon">Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet  </p>
           </div>
-          <div class="col-12 col-md-6 col-xl-3">
+          <div class="col-12 col-sm-6 col-lg-3">
             <div class="about__-wrapper d-flex justify-content-center">
-              <div class="about__icon-wrapper"><i class="fas fa-heart about__icon"></i></div>
+              <div class="about__icon-wrapper"><i class="fas fa-book-reader about__icon"></i></div>
             </div>
             <h3 class="about__txt">RESPONSIVE</h3>
             <p class="primery-text-color about__txt" src="../../../dist/img/icon/icon2.svg" alt="icon">Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet  </p>
           </div>
-          <div class="col-12 col-md-6 col-xl-3">
+          <div class="col-12 col-sm-6 col-lg-3">
             <div class="about__-wrapper d-flex justify-content-center">
-              <div class="about__icon-wrapper"><i class="fas fa-heart about__icon"></i></div>
+              <div class="about__icon-wrapper"><i class="fas fa-book-reader about__icon"></i></div>
             </div>
             <h3 class="about__txt">CLEAN &amp; USEFUL</h3>
             <p class="primery-text-color about__txt" src="../../../dist/img/icon/icon2.svg" alt="icon">Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet  </p>
@@ -289,14 +286,10 @@
           <h3>Lorem ipsum dolor sit amet, consectetur <span class="team__span-color">adipiscingelit.</span>Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. </h3>
         </div>
         <div class="row">
-          <div class="col-12 col-md-6 col-xl-3">
+          <div class="col-12 col-sm-6 col-lg-3">
             <div class="team__wrapper">
               <div class="team__img-wrapper">
-                <div class="team__network-wrapper">
-                  <div class="team__network"><i class="fab fa-facebook-f team__icon"></i></div>
-                  <div class="team__network"><i class="fab fa-twitter team__icon"></i></div>
-                  <div class="team__network"><i class="fab fa-google-plus-g team__icon"></i></div>
-                </div><img class="team__img" src="../../../dist/img/img00.png" alt="team"/>
+                <div class="team__network-wrapper"><a class="team__network" href="javascript:void(0)"><i class="fab fa-facebook-f team__icon"></i></a><a class="team__network" href="javascript:void(0)"><i class="fab fa-twitter team__icon"></i></a><a class="team__network" href="javascript:void(0)"><i class="fab fa-google-plus-g team__icon"></i>  </a></div><img class="lazy team__img" data-src="./img/img00.png" alt="team"/>
               </div>
               <div class="team__name-wrapper">
                 <h2 class="team__name">Bruce Wayne</h2>
@@ -304,14 +297,10 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-xl-3">
+          <div class="col-12 col-sm-6 col-lg-3">
             <div class="team__wrapper">
               <div class="team__img-wrapper">
-                <div class="team__network-wrapper">
-                  <div class="team__network"><i class="fab fa-facebook-f team__icon"></i></div>
-                  <div class="team__network"><i class="fab fa-twitter team__icon"></i></div>
-                  <div class="team__network"><i class="fab fa-google-plus-g team__icon"></i></div>
-                </div><img class="team__img" src="../../../dist/img/img01.png" alt="team"/>
+                <div class="team__network-wrapper"><a class="team__network" href="javascript:void(0)"><i class="fab fa-facebook-f team__icon"></i></a><a class="team__network" href="javascript:void(0)"><i class="fab fa-twitter team__icon"></i></a><a class="team__network" href="javascript:void(0)"><i class="fab fa-google-plus-g team__icon"></i>  </a></div><img class="lazy team__img" data-src="./img/img01.png" alt="team"/>
               </div>
               <div class="team__name-wrapper">
                 <h2 class="team__name">Johan De</h2>
@@ -319,14 +308,10 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-xl-3">
+          <div class="col-12 col-sm-6 col-lg-3">
             <div class="team__wrapper">
               <div class="team__img-wrapper">
-                <div class="team__network-wrapper">
-                  <div class="team__network"><i class="fab fa-facebook-f team__icon"></i></div>
-                  <div class="team__network"><i class="fab fa-twitter team__icon"></i></div>
-                  <div class="team__network"><i class="fab fa-google-plus-g team__icon"></i></div>
-                </div><img class="team__img" src="../../../dist/img/img00.png" alt="team"/>
+                <div class="team__network-wrapper"><a class="team__network" href="javascript:void(0)"><i class="fab fa-facebook-f team__icon"></i></a><a class="team__network" href="javascript:void(0)"><i class="fab fa-twitter team__icon"></i></a><a class="team__network" href="javascript:void(0)"><i class="fab fa-google-plus-g team__icon"></i>  </a></div><img class="lazy team__img" data-src="./img/img00.png" alt="team"/>
               </div>
               <div class="team__name-wrapper">
                 <h2 class="team__name">Sarah Doe</h2>
@@ -334,14 +319,10 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-xl-3">
+          <div class="col-12 col-sm-6 col-lg-3">
             <div class="team__wrapper">
               <div class="team__img-wrapper">
-                <div class="team__network-wrapper">
-                  <div class="team__network"><i class="fab fa-facebook-f team__icon"></i></div>
-                  <div class="team__network"><i class="fab fa-twitter team__icon"></i></div>
-                  <div class="team__network"><i class="fab fa-google-plus-g team__icon"></i></div>
-                </div><img class="team__img" src="../../../dist/img/img01.png" alt="team"/>
+                <div class="team__network-wrapper"><a class="team__network" href="javascript:void(0)"><i class="fab fa-facebook-f team__icon"></i></a><a class="team__network" href="javascript:void(0)"><i class="fab fa-twitter team__icon"></i></a><a class="team__network" href="javascript:void(0)"><i class="fab fa-google-plus-g team__icon"></i>  </a></div><img class="lazy team__img" data-src="./img/img01.png" alt="team"/>
               </div>
               <div class="team__name-wrapper">
                 <h2 class="team__name">Amr Srour</h2>
@@ -365,7 +346,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-12 col-md-6 col-xl-3 f">
+          <div class="col-12 col-sm-6 col-lg-3">
             <div class="team__wrap d-flex justify-content-center"><ul>
 <li class="List-item">
 <div class="ProgressBar ProgressBar--animateAll" data-progress="90">
@@ -381,7 +362,7 @@
             <h3 class="team__skills">Photoshop</h3>
             <p class="primery-text-color team__skills-txt">Donec luctus tortor in placerat faucibus</p>
           </div>
-          <div class="col-12 col-md-6 col-xl-3 f">
+          <div class="col-12 col-sm-6 col-lg-3">
             <div class="team__wrap d-flex justify-content-center"><ul>
 <li class="List-item">
 <div class="ProgressBar ProgressBar--animateAll" data-progress="90">
@@ -397,7 +378,7 @@
             <h3 class="team__skills">HTML</h3>
             <p class="primery-text-color team__skills-txt">Donec luctus tortor in placerat faucibus</p>
           </div>
-          <div class="col-12 col-md-6 col-xl-3 f">
+          <div class="col-12 col-sm-6 col-lg-3">
             <div class="team__wrap d-flex justify-content-center"><ul>
 <li class="List-item">
 <div class="ProgressBar ProgressBar--animateAll" data-progress="90">
@@ -413,7 +394,7 @@
             <h3 class="team__skills">php</h3>
             <p class="primery-text-color team__skills-txt">Donec luctus tortor in placerat faucibus</p>
           </div>
-          <div class="col-12 col-md-6 col-xl-3 f">
+          <div class="col-12 col-sm-6 col-lg-3">
             <div class="team__wrap d-flex justify-content-center"><ul>
 <li class="List-item">
 <div class="ProgressBar ProgressBar--animateAll" data-progress="90">
@@ -536,11 +517,10 @@
                   <p class="follow__txt">200</p>
                 </div>
               </div>
-            </div>
-            <button class="btn-modal" id="btn_modal_window">send massage</button>
+            </div><a class="button" id="btn_modal_window"> <span>send message</span></a>
             <div class="modal" id="my_modal">
               <div class="modal_content"><span class="close_modal_window">×</span>
-                <form method="get" action="">
+                <form id="modal-form" method="get" action="">
                   <input type="text" required="required" placeholder="Name"/>
                   <input type="email" required="required" placeholder="Email"/>
                   <input type="text" required="required" placeholder="Subject"/>
@@ -569,7 +549,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/0b79355df0.js" crossorigin="anonymous">     </script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script src="path/to/swiper.min.js"></script>
     <script src="./js/jquery.lazy.min.js"></script>
     <script src="./js/jquery.lazy.picture.min.js"></script>
     <script src="./js/svgxuse.min.js"></script>

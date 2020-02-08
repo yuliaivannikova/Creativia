@@ -7,17 +7,17 @@ mixin team
                 h3 Lorem ipsum dolor sit amet, consectetur <span class="team__span-color">adipiscingelit.</span>Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. 
             .row
                 each val, index in ['Bruce Wayne', 'Johan De', 'Sarah Doe', 'Amr Srour']
-                    .col-12.col-md-6.col-xl-3
+                    .col-12.col-sm-6.col-lg-3
                         .team__wrapper
                             .team__img-wrapper
                                 .team__network-wrapper
-                                    .team__network
+                                    a(href="javascript:void(0)").team__network
                                         <i class="fab fa-facebook-f team__icon"></i>
-                                    .team__network
+                                    a(href="javascript:void(0)").team__network
                                         <i class="fab fa-twitter team__icon"></i>
-                                    .team__network
-                                        <i class="fab fa-google-plus-g team__icon"></i>
-                                img.team__img(src=`../../../dist/img/img0${index%2}.png`, alt="team") 
+                                    a(href="javascript:void(0)").team__network
+                                        <i class="fab fa-google-plus-g team__icon"></i>  
+                                img.lazy.team__img(data-src=`./img/img0${index%2}.png`, alt="team") 
                             .team__name-wrapper
                                 h2.team__name=`${val}`
                                 p.primery-text-color Webdesigner
@@ -34,7 +34,7 @@ mixin team
             .row
                 //- div.d-flex.justify-content-center
                 each val in ['Photoshop','HTML', 'php', 'wordpress'] 
-                    .col-12.col-md-6.col-xl-3.f
+                    .col-12.col-sm-6.col-lg-3
                         .team__wrap.d-flex.justify-content-center
                             +progres
                         h3.team__skills=`${val}`

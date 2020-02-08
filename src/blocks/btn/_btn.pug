@@ -1,13 +1,12 @@
 mixin btn
-    button.btn-modal#btn_modal_window send massage
+    a.button#btn_modal_window 
+        span send message
     .modal(id="my_modal")
         .modal_content
             span.close_modal_window ×
-            //- p Модальное окно!
-            form(method="get" action="")
+            form( id="modal-form" method="get" action="")
                 input(type="text" required placeholder="Name")
                 input(type="email" required  placeholder="Email")
                 input(type="text" required  placeholder="Subject")
                 button(type="submit").btn-submit submit
-    //- .button-style
-    //-     span send massage
+    

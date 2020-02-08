@@ -6,18 +6,22 @@ mixin about
             .about__subtitle.d-flex.justify-content-center
                 h3 Lorem ipsum dolor sit amet, consectetur <span class="about__span-color"> adipiscingelit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. 
             .row
-                .col-12.col-lg-6
+                .col-12.col-xl-6
                     p.primery-text-color.about__txt-acc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae, 
                     +acordion
                 .col-12.col-lg-6
                     .swiper-container
                         .swiper-wrapper
-                            .swiper-slide  
-                                img.about__slider-img(src="../../../dist/img/img2.png", alt="img")
                             .swiper-slide 
-                                img.about__slider-img(src="../../../dist/img/img1.png", alt="img")
+                                img.lazy.about__slider-img(data-src="../../../dist/img/img2.png", alt="img")
+                            .swiper-slide 
+                                img.lazy.about__slider-img(data-src="../../../dist/img/img1.png", alt="img")
                             .swiper-slide
-                                img.about__slider-img(src="../../../dist/img/img3.png", alt="img")
+                                img.lazy.about__slider-img(data-src="../../../dist/img/img3.png", alt="img")
+                            .swiper-slide  
+                                img.lazy.about__slider-img(data-src="../../../dist/img/img2.png", alt="img")
+                            .swiper-slide 
+                                img.lazy.about__slider-img(data-src="../../../dist/img/img1.png", alt="img")
             .row
                 .col-xl-12
                     .about__wrapper-element 
@@ -25,11 +29,12 @@ mixin about
                             .about__decoration-element
                     //- div.d-flex
             .row            
-                each val, index in ['FLAT DESIGN','RETINA READY', 'RESPONSIVE', 'CLEAN & USEFUL'] 
-                    .col-12.col-md-6.col-xl-3
+                each val in ['FLAT DESIGN','RETINA READY', 'RESPONSIVE', 'CLEAN & USEFUL'] 
+                    .col-12.col-sm-6.col-lg-3
                         //- .about__icon-wrapper.d-flex.justify-content-center
                         .about__-wrapper.d-flex.justify-content-center
                             .about__icon-wrapper
-                                <i class="fas fa-heart about__icon"></i>
+                                //- <i class="fas fa-heart about__icon"></i>
+                                <i class="fas fa-book-reader about__icon"></i>
                         h3.about__txt=`${val}` 
                         p.primery-text-color.about__txt(src="../../../dist/img/icon/icon2.svg", alt="icon") Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet  

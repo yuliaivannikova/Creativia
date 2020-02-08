@@ -18,20 +18,20 @@
     stroke-dashoffset: 0;
     position: relative;
     z-index: 10;
-
 }
 
 .ProgressBar-background {
-    stroke: white;
-    stroke-width: 4px;
+    stroke: #D8D8D8;
+    stroke-width: 2px;
     z-index: 0;
 }
 
 .ProgressBar-percentage {
-    color: #ff0036;
-    font-size: 40px;
+    // color: #ff0036;
+    font-size: 46px;
     text-align: center;
     width: 100%;
     position: absolute;
-
+    font-weight: 500;
+    color: #ff0036;
 }
